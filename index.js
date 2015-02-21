@@ -199,7 +199,7 @@ function readDefaults(paths, opts, cb) {
 
     data.blobs = normalizeModule(opts.blobs || data.blobs, 'content-addressable-blob-store')
     data.replicator = normalizeModule(opts.replicator || data.replicator, 'dat-replicator')
-    data.leveldown = normalizeModule(opts.leveldown || data.leveldown, 'leveldown-prebuilt')
+    data.leveldown = normalizeModule(opts.leveldown || data.leveldown, 'leveldown')
     data.transformations = opts.transformations || data.transformations || {}
     data.hooks = opts.hooks || data.hooks || {}
     data.remotes = opts.remotes || data.remotes || {}
